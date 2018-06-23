@@ -8,17 +8,167 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/sun"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/uranus" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alone in the Dark..."
-        android:textColor="#FFFF"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/sun"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mercury"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="152dp"
+        android:src="@drawable/mercury"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sun"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <ImageView
+        android:id="@+id/venus"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginRight="129dp"
+        android:layout_marginStart="240dp"
+        android:src="@drawable/venus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <ImageView
+        android:id="@+id/earth"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/earth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <ImageView
+        android:id="@+id/mars"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginRight="210dp"
+        android:layout_marginStart="164dp"
+        android:src="@drawable/mars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <ImageView
+        android:id="@+id/jupiter"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginLeft="304dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginStart="304dp"
+        android:src="@drawable/jupiter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <ImageView
+        android:id="@+id/saturn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:src="@drawable/saturn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <ImageView
+        android:id="@+id/uranus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="411dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/uranus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/neptune"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="460dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/neptune"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/uranus"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/pluto"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/pluto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/neptune"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
 
 </android.support.constraint.ConstraintLayout>
