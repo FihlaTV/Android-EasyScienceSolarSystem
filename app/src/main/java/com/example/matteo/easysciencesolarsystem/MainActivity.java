@@ -6,6 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: started");
 
         initImageBitmaps();
+
     }
 
 

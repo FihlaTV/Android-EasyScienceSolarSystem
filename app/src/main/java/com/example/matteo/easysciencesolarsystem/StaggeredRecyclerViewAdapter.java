@@ -1,6 +1,7 @@
 package com.example.matteo.easysciencesolarsystem;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -55,8 +56,15 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
             @Override
             public void onClick(View view) {
                 Toast.makeText(mContext, mPlanetNames.get(position), Toast.LENGTH_SHORT).show();
+                openSun();
             }
         });
+    }
+
+
+    public void openSun() {
+        Intent intent = new Intent (mContext, Sun.class);
+        mContext.startActivity(intent);
     }
 
     @Override
