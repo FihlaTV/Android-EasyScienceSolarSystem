@@ -25,4 +25,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    //glide to retrieve images from internet
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //make images circular
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    repositories {
+        mavenCentral()
+        google()
+    }
+    compile 'com.sothree.slidinguppanel:library:3.4.0'
 }
