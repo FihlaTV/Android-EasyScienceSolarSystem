@@ -56,14 +56,37 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
             @Override
             public void onClick(View view) {
                 Toast.makeText(mContext, mPlanetNames.get(position), Toast.LENGTH_SHORT).show();
-                openSun();
+                switch(mPlanetNames.get(position)){
+                    case "Sun":  openPlanet();
+                        break;
+                    case "Mercury":  openPlanet();
+                        break;
+                    case "Venus":  openPlanet();
+                        break;
+                    case "Earth":  openPlanet();
+                        break;
+                    case "Mars":  openPlanet();
+                        break;
+                    case "Jupiter":  openPlanet();
+                        break;
+                    case "Saturn":  openPlanet();
+                        break;
+                    case "Uranus":  openPlanet();
+                        break;
+                    case "Neptune":  openPlanet();
+                        break;
+                    case "Pluto":  openPlanet();
+                        break;
+                    default:
+                        Toast.makeText(mContext, "No Planet selected", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
 
 
-    public void openSun() {
-        Intent intent = new Intent (mContext, Sun.class);
+    public void openPlanet() {
+        Intent intent = new Intent (mContext, Planet.class);
         mContext.startActivity(intent);
     }
 

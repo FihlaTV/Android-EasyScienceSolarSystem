@@ -67,10 +67,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initRecycleView(){
         Log.d(TAG, "initRecycleView: initialize recyclerView");
-        //RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
-        //StaggeredRecyclerViewAdapter adapter = new StaggeredRecyclerViewAdapter(mNames, mImageUrl, this);
-        //recyclerView.setAdapter(adapter);
-        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         RecyclerView recyclerView = findViewById(R.id.my_recycler_view);
         StaggeredRecyclerViewAdapter staggeredRecyclerViewAdapter =

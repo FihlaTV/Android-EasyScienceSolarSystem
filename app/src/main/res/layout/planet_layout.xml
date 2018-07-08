@@ -17,9 +17,9 @@
         android:text="Mercury"
         android:id="@+id/planet_name"
         android:layout_below="@+id/planet_image"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:layout_marginLeft="20dp"
         android:textSize="17dp"
-        android:textColor="#000"/>
+        android:textColor="#FFF"/>
 
 </RelativeLayout>
