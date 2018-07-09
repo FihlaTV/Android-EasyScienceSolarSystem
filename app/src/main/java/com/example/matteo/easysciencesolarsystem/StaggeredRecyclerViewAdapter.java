@@ -1,5 +1,6 @@
 package com.example.matteo.easysciencesolarsystem;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -56,73 +57,12 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
             @Override
             public void onClick(View view) {
                 Toast.makeText(mContext, mPlanetNames.get(position), Toast.LENGTH_SHORT).show();
-                switch(mPlanetNames.get(position)){
-                    case "Sun":  openSun();
-                        break;
-                    case "Mercury":  openMercury();
-                        break;
-                    case "Venus":  openVenus();
-                        break;
-                    case "Earth":  openEarth();
-                        break;
-                    case "Mars":  openMars();
-                        break;
-                    case "Jupiter":  openJupiter();
-                        break;
-                    case "Saturn":  openSaturn();
-                        break;
-                    case "Uranus":  openUranus();
-                        break;
-                    case "Neptune":  openNeptune();
-                        break;
-                    case "Pluto":  openPluto();
-                        break;
-                    default:
-                        Toast.makeText(mContext, "No Planet selected", Toast.LENGTH_SHORT).show();
-                }
+                Intent intent = new Intent (mContext, Planet.class);
+                intent.putExtra("image_url", mPlanetImages.get(position));
+                intent.putExtra("image_name", mPlanetNames.get(position));
+                mContext.startActivity(intent);
             }
         });
-    }
-
-    public void openSun() {
-        Intent intent = new Intent (mContext, Sun.class);
-        mContext.startActivity(intent);
-    }
-    public void openMercury() {
-        Intent intent2 = new Intent (mContext, Mercury.class);
-        mContext.startActivity(intent2);
-    }
-    public void openVenus() {
-        Intent intent3 = new Intent (mContext, Venus.class);
-        mContext.startActivity(intent3);
-    }
-    public void openEarth() {
-        Intent intent4 = new Intent (mContext, Earth.class);
-        mContext.startActivity(intent4);
-    }
-    public void openMars() {
-        Intent intent5 = new Intent (mContext, Mars.class);
-        mContext.startActivity(intent5);
-    }
-    public void openJupiter() {
-        Intent intent6 = new Intent (mContext, Jupiter.class);
-        mContext.startActivity(intent6);
-    }
-    public void openSaturn() {
-        Intent intent7 = new Intent (mContext, Saturn.class);
-        mContext.startActivity(intent7);
-    }
-    public void openUranus() {
-        Intent intent8 = new Intent (mContext, Uranus.class);
-        mContext.startActivity(intent8);
-    }
-    public void openNeptune() {
-        Intent intent9 = new Intent (mContext, Neptune.class);
-        mContext.startActivity(intent9);
-    }
-    public void openPluto() {
-        Intent intent10 = new Intent (mContext, Pluto.class);
-        mContext.startActivity(intent10);
     }
 
     @Override
