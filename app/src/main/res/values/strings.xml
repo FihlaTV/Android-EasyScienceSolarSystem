@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">EasyScience: Solar System</string>
+    <string name="game">It\'s hard to imagine how big and far these planets are.\n\nSelect the planet from the menu, insert your weight in kg to find out how heavy you would be there and how long it takes to get there at the speed of light</string>
+    <string-array name="planets_array">
+        <item>Sun</item>
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Moon</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Pluto</item>
+    </string-array>
 </resources>

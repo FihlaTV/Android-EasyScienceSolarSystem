@@ -16,6 +16,7 @@ public class Planet extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.planet_single);
         Log.d(TAG, "onCreate: started");
+        getIncomingIntent();
     }
 
     private void getIncomingIntent(){
@@ -30,7 +31,7 @@ public class Planet extends AppCompatActivity{
         }
     }
     
-    private void setImage(String image_url, String imageName){
+    private void setImage(String imageUrl, String imageName){
         Log.d(TAG, "setImage: setting image and name to widgets");
         TextView name = findViewById(R.id.full_description);
         name.setText(imageName);
@@ -38,7 +39,8 @@ public class Planet extends AppCompatActivity{
         ImageView image = findViewById(R.id.image_large);
         Glide.with(this)
                 .asBitmap()
-                .load(image_url)
+                .load(imageUrl)
                 .into(image);
+
     }
 }

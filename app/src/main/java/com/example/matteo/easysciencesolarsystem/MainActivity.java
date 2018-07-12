@@ -1,12 +1,16 @@
 package com.example.matteo.easysciencesolarsystem;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -22,9 +26,49 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: started");
+        ImageView sun = findViewById(R.id.sun);
+        ImageView mercury = findViewById(R.id.mercury);
+        ImageView venus = findViewById(R.id.venus);
+        ImageView earth = findViewById(R.id.earth);
+        ImageView mars = findViewById(R.id.mars);
+        ImageView jupiter = findViewById(R.id.jupiter);
+        ImageView saturn = findViewById(R.id.saturn);
+        ImageView uranus = findViewById(R.id.uranus);
+        ImageView neptune = findViewById(R.id.neptune);
+        ImageView pluto = findViewById(R.id.pluto);
+        sun.setTag(1);
+        mercury.setTag(2);
+        venus.setTag(3);
+        earth.setTag(4);
+        mars.setTag(5);
+        jupiter.setTag(6);
+        saturn.setTag(7);
+        uranus.setTag(8);
+        neptune.setTag(9);
+        pluto.setTag(10);
 
+        View.OnClickListener onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openGame();
+            }
+        };
+        sun.setOnClickListener(onClickListener);
+        mercury.setOnClickListener(onClickListener);
+        venus.setOnClickListener(onClickListener);
+        earth.setOnClickListener(onClickListener);
+        mars.setOnClickListener(onClickListener);
+        jupiter.setOnClickListener(onClickListener);
+        saturn.setOnClickListener(onClickListener);
+        uranus.setOnClickListener(onClickListener);
+        neptune.setOnClickListener(onClickListener);
+        pluto.setOnClickListener(onClickListener);
         initImageBitmaps();
+    }
 
+    public void openGame(){
+        Intent intent = new Intent(this, Game.class);
+        startActivity(intent);
     }
 
 

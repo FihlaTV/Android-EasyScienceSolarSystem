@@ -19,6 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Planet"/>
+        <activity android:name=".Game" />
     </application>
 
 </manifest>
